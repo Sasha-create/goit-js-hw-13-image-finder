@@ -1,0 +1,35 @@
+{{#each this}}
+<li>
+    {{!-- <a href="{{url}}" target="_blank" rel="noopener noreferrer">
+        <article> --}}
+            <div class="photo-card">
+                <picture class="photo-card__picture"><img class="photo-card__image hidden" onload="({{id}})"
+                        srcset="{{previewURL}} {{previewWidth}}w, {{webformatURL}} {{webformatWidth}}w"
+                        sizes="{{previewWidth}}" src="{{webformatURL}}" alt="{{tags}}" data-src="{{largeImageURL}}"
+                        data-id="{{id}}" />
+                </picture>
+
+                <div class="stats">
+                    <p class="stats-item">
+                        <i class="material-icons">thumb_up</i>
+                        {{likes}}
+                    </p>
+                    <p class="stats-item">
+                        <i class="material-icons">visibility</i>
+                        {{views}}
+                    </p>
+                    <p class="stats-item">
+                        <i class="material-icons">comment</i>
+                        {{comments}}
+                    </p>
+                    <p class="stats-item">
+                        <i class="material-icons">cloud_download</i>
+                        {{downloads}}
+                    </p>
+                </div>
+            </div>
+            {{!--
+        </article>
+    </a> --}}
+</li>
+{{/each}}

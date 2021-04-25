@@ -24,6 +24,9 @@ export default class NewsApiService {
       .then(data => {
         // console.log(data);
         return data.hits;
+      })
+      .catch(error => {
+        return;
       });
   }
 

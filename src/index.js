@@ -14,7 +14,7 @@ const loadMoreBtn = new LoadMoreBtn({
   hidden: true,
 });
 
-defaults.delay = 100;
+defaults.delay = 1000;
 defaults.icon = false;
 defaults.styling = 'material';
 
